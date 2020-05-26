@@ -35,10 +35,10 @@
         android:id="@+id/tVpoli"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="28dp"
-        android:layout_marginLeft="28dp"
-        android:layout_marginTop="184dp"
-        android:text="Institución Universitaria Politécnico Grancolombiano"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="188dp"
+        android:text="Institución Universitaria Politécnico Grancolombiano - 2020"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/bPresiona" />
 
