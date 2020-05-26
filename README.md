@@ -12,7 +12,7 @@
 
 ## Proyecto de Software
 <ul>
-<li>Cálculo Vías</li>
+<li>Cálculo de Vías</li>
 </ul>
 
 ## Integrantes del Grupo
@@ -21,6 +21,6 @@
 <li>Yeison Andrés González Pérez</li>
 <li>Alexander García</li>
 <li>Roland Camilo Torres Bejarano</li>
-<li>CYadira Eliana León Chaparro</li>
+<li>Yadira Eliana León Chaparro</li>
 </ul>
 
