@@ -9,7 +9,7 @@
 
     <Button
         android:id="@+id/bPresiona"
-        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        style="@android:style/Widget.Button.Inset"
         android:layout_width="251dp"
         android:layout_height="109dp"
         android:layout_marginStart="160dp"
@@ -19,9 +19,9 @@
         android:layout_marginRight="160dp"
         android:background="#D8DEDF"
         android:text="Presiona"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textColor="#2196F3"
-        android:textSize="30sp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="#FF9800"
+        android:textSize="36sp"
         android:textStyle="bold|italic"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -29,8 +29,8 @@
 
     <TextView
         android:id="@+id/tvHolaMundo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="53dp"
+        android:layout_height="0dp"
         android:layout_marginStart="169dp"
         android:layout_marginLeft="169dp"
         android:layout_marginTop="100dp"
@@ -45,7 +45,8 @@
         android:layout_marginLeft="24dp"
         android:layout_marginTop="360dp"
         android:text="Institución Universitaria Politécnico Grancolombiano - 2020"
-        android:textColor="#2196F3"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="#FF5722"
         android:textStyle="bold|italic"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/bPresiona" />
