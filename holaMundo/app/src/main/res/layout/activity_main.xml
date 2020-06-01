@@ -20,7 +20,7 @@
         android:background="#D8DEDF"
         android:text="Presiona aqui"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        android:textColor="#673AB7"
+        android:textColor="#F44336"
         android:textSize="36sp"
         android:textStyle="bold|italic"
         app:layout_constraintEnd_toEndOf="parent"
