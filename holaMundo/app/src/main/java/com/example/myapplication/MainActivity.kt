@@ -12,7 +12,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        // aporte 1 inicio
+       // aporte 1 inicio
         
 import android.content.Intent
 import android.os.Bundle
