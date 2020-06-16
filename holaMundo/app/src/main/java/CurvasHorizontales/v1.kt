@@ -1,3 +1,5 @@
+package CurvasHorizontales
+
 class CurvasCircular (D:Double,C:Double,Ra:Double) {
 
     // Formulas para calcular elementos de las curvas, sacadas del manual de invias
