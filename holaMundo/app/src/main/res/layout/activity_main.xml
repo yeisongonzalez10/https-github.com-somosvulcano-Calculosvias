@@ -1,63 +1,401 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_alignWithParentIfMissing="false"
-    android:layout_centerInParent="false"
-    android:layout_centerHorizontal="false"
-    android:layout_centerVertical="false"
-    android:background="@android:drawable/btn_star_big_on"
-    android:foregroundGravity="top|left|bottom|center_vertical|clip_horizontal|center|fill_vertical|clip_vertical|right|center_horizontal|fill"
-    android:orientation="horizontal"
-    android:rotation="1"
-    android:saveEnabled="true"
-    android:scrollbarDefaultDelayBeforeFade="200"
+    android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/IDPRESIONA"
-        style="@android:style/Widget.Button.Inset"
-        android:layout_width="180dp"
-        android:layout_height="111dp"
-        android:layout_marginStart="160dp"
-        android:layout_marginLeft="160dp"
-        android:layout_marginTop="44dp"
-        android:layout_marginEnd="160dp"
-        android:layout_marginRight="160dp"
-        android:background="#F44336"
-        android:text="Presiona aqui"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        android:textColor="#FFEB3B"
-        android:textSize="36sp"
-        android:textStyle="bold|italic"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.696"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/tvHolaMundo"
-        android:layout_width="53dp"
-        android:layout_height="0dp"
-        android:layout_marginStart="168dp"
-        android:layout_marginLeft="168dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/IDPRESIONA" />
+        <TextView
+            android:id="@+id/CurvaCircular"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/borde_texto"
+            android:text="@string/CurvaCircular"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_dark"
+            android:textSize="25sp"
+            android:textStyle="bold" />
 
-    <TextView
-        android:id="@+id/tVpoli"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
-        android:layout_marginLeft="24dp"
-        android:layout_marginTop="392dp"
-        android:text="Institución Universitaria Politécnico Grancolombiano - 2020"
-        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        android:textColor="#FF5722"
-        android:textStyle="bold|italic"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/IDPRESIONA" />
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tvDeflexion"
+                    android:layout_width="326dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/borde_texto"
+                    android:gravity="center"
+                    android:text="Deflexion"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorNegro" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/etDG"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/borde_texto"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:hint="G"
+                        android:inputType="numberDecimal"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/background_dark"
+                        android:textColorHint="@color/colorGris"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/etDM"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/borde_texto"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:hint="M"
+                        android:inputType="numberDecimal"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/background_dark"
+                        android:textColorHint="@color/colorGris"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/etDS"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/borde_texto"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:hint="S"
+                        android:inputType="numberDecimal"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/background_dark"
+                        android:textColorHint="@color/colorGris"
+                        android:textSize="14sp" />
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tvCuerda"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/borde_texto"
+                    android:gravity="center"
+                    android:text="Cuerda"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorNegro" />
+
+                <EditText
+                    android:id="@+id/etC"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/borde_texto"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="Cuerda"
+                    android:inputType="numberDecimal"
+                    android:shadowColor="#FFFFFF"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/background_dark"
+                    android:textColorHint="@color/colorGris"
+                    android:textSize="14sp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tvRadio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/borde_texto"
+                    android:gravity="center"
+                    android:text="Radio"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorNegro" />
+
+                <EditText
+                    android:id="@+id/etRa"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/borde_texto"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="Radio Curva"
+                    android:inputType="numberDecimal"
+                    android:scrollbarSize="4dp"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/background_dark"
+                    android:textColorHint="@color/colorGris"
+                    android:textSize="14sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tvTangente"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/borde_texto"
+                    android:gravity="center"
+                    android:text="Tangente"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorNegro" />
+
+                <TextView
+                    android:id="@+id/tvT"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/borde_texto"
+                    android:gravity="center"
+                    android:text="Tangente"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/background_dark" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tvCuerdaLarga"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/borde_texto"
+                    android:gravity="center"
+                    android:text="Cuerda Larga"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorNegro" />
+
+                <TextView
+                    android:id="@+id/tvCl"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/borde_texto"
+                    android:gravity="center"
+                    android:text="Cuerda larga"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/background_dark" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tvExterna"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/borde_texto"
+                    android:gravity="center"
+                    android:text="Externa"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorNegro" />
+
+                <TextView
+                    android:id="@+id/tvE"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/borde_texto"
+                    android:gravity="center"
+                    android:text="Externa"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/background_dark" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tvOrdenada"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/borde_texto"
+                    android:gravity="center"
+                    android:text="Ordenada media o flecha"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorNegro" />
+
+                <TextView
+                    android:id="@+id/tvO"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/borde_texto"
+                    android:gravity="center"
+                    android:text="Ordenada Media"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/background_dark" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/TvGradoCurva"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/borde_texto"
+                    android:gravity="center"
+                    android:text="Grado curva"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorNegro" />
+
+                <TextView
+                    android:id="@+id/tvG"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/borde_texto"
+                    android:gravity="center"
+                    android:text="Grado curva"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="14sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/TvLongitudCurva"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/borde_texto"
+                    android:gravity="center"
+                    android:text="Longitud Curva"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorNegro" />
+
+                <TextView
+                    android:id="@+id/tvL"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/borde_texto"
+                    android:gravity="center"
+                    android:text="Longitud de Curva"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="14sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tvCuerdaUnidad"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/borde_texto"
+                    android:gravity="center"
+                    android:text="Cuerda Por Unidad"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorNegro" />
+
+                <TextView
+                    android:id="@+id/tvCu"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/borde_texto"
+                    android:gravity="center"
+                    android:text="Cuerda por Unidad"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="14sp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tvDeflexionMetro"
+                    android:layout_width="139dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/borde_texto"
+                    android:gravity="center"
+                    android:text="Deflexion por metro"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorNegro" />
+
+                <TextView
+                    android:id="@+id/tvDm"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/borde_texto"
+                    android:gravity="center"
+                    android:text="Deflexion por metro"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/background_dark"
+                    android:textSize="14sp" />
+            </TableRow>
+        </TableLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buCalcularCircular"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/borde_texto"
+                android:text="Calcular"
+                android:textColor="@color/colorNegro" />
+        </LinearLayout>
+
+    </LinearLayout>
+

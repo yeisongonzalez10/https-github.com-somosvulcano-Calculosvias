@@ -13,15 +13,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
 
-        var hola: TextView? = null
-
-
-        var presiona: Button = findViewById<Button>(R.id.IDPRESIONA)
-        presiona.setOnClickListener(View.OnClickListener {
-            hola= findViewById(R.id.tvHolaMundo)
-
-            hola?.text = "Hola mundo"
-
-        }    )
+        }
     }
 }
