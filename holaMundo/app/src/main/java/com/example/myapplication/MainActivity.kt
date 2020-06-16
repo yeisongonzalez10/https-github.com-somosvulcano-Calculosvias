@@ -117,8 +117,40 @@ class MainActivity : AppCompatActivity() {
         }
         return true
     }
-
        //aporte 3 fin
+
+// Aporte 4 incio
+
+    // funcion para pasar los datos del angulos que ingresa grado, minuto y segundos, se vuelve grados decimales, para poder calcular
+    fun GradosDecimales(GrD: EditText, GrM: EditText, GrS: EditText): Double {
+
+        var DG = GrD.text.toString().toDouble()
+        var DM = (GrM.text.toString().toDouble()) / 60
+        var DS = (GrS.text.toString().toDouble()) / 3600
+        return DG + DM + DS
+    }
+
+
+// funcion para pasar los datos del angulos decimales a grados en Grado, minutos y segundo, en String para mostrar al usuario
+
+    fun Grados(GraDec: Double): String {
+
+        var DG = "%.0f".format(truncate(GraDec)).toString() + "° "
+        var DM = "%.0f".format((truncate(((GraDec - truncate(GraDec)) * 60)))).toString() + " ' "
+        var DS = "%.2f".format(((((GraDec - truncate(GraDec)) * 60)) - (truncate(((GraDec - truncate(GraDec)) * 60)))) * 60).toString() + " ' '"
+
+        return DG + DM + DS
+
+    }
+
+}
+
+
+
+
+
+
+    // aporte 4 fin
 
 
 
