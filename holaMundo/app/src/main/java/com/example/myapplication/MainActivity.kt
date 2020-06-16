@@ -91,13 +91,40 @@ class MainActivity : AppCompatActivity() {
 
     //aporte 2 fin
 
+    //aporte 3 inicio
 
-
-
-
-
-
+            } else {
+                Toast.makeText(this, "ingresar datos para Calcular", Toast.LENGTH_LONG).show()
             }
+        })
+
+    }
+
+    fun validaDato(): Boolean {
+        val etDG = findViewById<EditText>(R.id.etDG)
+        val DG = etDG.text
+        val etDM = findViewById<EditText>(R.id.etDM)
+        val DM = etDM.text
+        val etDS = findViewById<EditText>(R.id.etDS)
+        val DS = etDS.text
+        val etC = findViewById<EditText>(R.id.etC)
+        val C = etC.text
+        val etRa = findViewById<EditText>(R.id.etRa)
+        val Ra = etRa.text
+
+        if (DG.isNullOrEmpty() || DM.isNullOrEmpty() || DS.isNullOrEmpty() || C.isNullOrEmpty() || Ra.isNullOrEmpty()) {
+            return false
+        }
+        return true
+    }
+
+       //aporte 3 fin
+
+
+
+
+
+}
     }
 }
 
