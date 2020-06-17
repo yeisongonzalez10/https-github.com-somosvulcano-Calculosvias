@@ -62,7 +62,7 @@
                         android:textAlignment="center"
                         android:textColor="@android:color/background_dark"
                         android:textColorHighlight="@color/colorNegro"
-                        android:textColorHint="@color/colorPrimary"
+                        android:textColorHint="@android:color/holo_green_dark"
                         android:textSize="14sp" />
 
                     <EditText
@@ -78,7 +78,7 @@
                         android:textAlignment="center"
                         android:textColor="@android:color/background_dark"
                         android:textColorHighlight="@color/colorNegro"
-                        android:textColorHint="@color/colorPrimary"
+                        android:textColorHint="@android:color/holo_green_dark"
                         android:textSize="14sp" />
 
                     <EditText
@@ -94,7 +94,7 @@
                         android:textAlignment="center"
                         android:textColor="@android:color/background_dark"
                         android:textColorHighlight="@color/colorNegro"
-                        android:textColorHint="@color/colorPrimary"
+                        android:textColorHint="@android:color/holo_green_dark"
                         android:textSize="14sp" />
                 </LinearLayout>
             </TableRow>
@@ -127,7 +127,7 @@
                     android:shadowColor="#FFFFFF"
                     android:textAlignment="center"
                     android:textColor="@android:color/background_dark"
-                    android:textColorHint="@color/colorPrimary"
+                    android:textColorHint="@android:color/holo_green_dark"
                     android:textSize="14sp" />
 
             </TableRow>
@@ -160,7 +160,7 @@
                     android:scrollbarSize="4dp"
                     android:textAlignment="center"
                     android:textColor="@android:color/background_dark"
-                    android:textColorHint="@color/colorPrimary"
+                    android:textColorHint="@android:color/holo_green_dark"
                     android:textSize="14sp" />
             </TableRow>
 
