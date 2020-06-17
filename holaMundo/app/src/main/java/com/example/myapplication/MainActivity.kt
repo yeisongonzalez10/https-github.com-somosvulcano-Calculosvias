@@ -49,13 +49,13 @@ class MainActivity : AppCompatActivity() {
 
                 var intent = Intent(this, MainActivity::class.java)
 
-                // Datos que ingresa el usuario, los convertimos en Double para poder calcular los elementos de la curva en la clase CurvaHorizontal
+     // Datos que ingresa el usuario, los convertimos en Double para poder calcular los elementos de la curva en la clase CurvaHorizontal
 
                 var D = GradosDecimales(etDG, etDM, etDS) // Delta de la curva
                 var C = etC.text.toString().toDouble() // Cuerda, linea reta de la curva
                 var Ra =etRa.text.toString().toDouble() // Radio, Circuferencia que describe la curva
 
-                // utilizamos la clase CurvaHorizontal para Calcular los elementos de la curva circular y lo dejamos en la variable c
+    // utilizamos la clase CurvaHorizontal para Calcular los elementos de la curva circular y lo dejamos en la variable c
 
                 var c = CurvasCircular(D,C,Ra)
 
@@ -112,7 +112,8 @@ class MainActivity : AppCompatActivity() {
 // Aporte 4 incio
 
     // funcion para pasar los datos del angulos que ingresa grado, minuto y segundos, se vuelve grados decimales, para poder calcular
-    fun GradosDecimales(GrD: EditText, GrM: EditText, GrS: EditText): Double {
+   
+       fun GradosDecimales(GrD: EditText, GrM: EditText, GrS: EditText): Double {
 
         var DG = GrD.text.toString().toDouble()
         var DM = (GrM.text.toString().toDouble()) / 60
