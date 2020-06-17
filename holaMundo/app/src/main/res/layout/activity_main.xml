@@ -61,7 +61,8 @@
                         android:inputType="numberDecimal"
                         android:textAlignment="center"
                         android:textColor="@android:color/background_dark"
-                        android:textColorHint="@color/colorGris"
+                        android:textColorHighlight="@color/colorNegro"
+                        android:textColorHint="@color/colorPrimary"
                         android:textSize="14sp" />
 
                     <EditText
@@ -76,7 +77,8 @@
                         android:inputType="numberDecimal"
                         android:textAlignment="center"
                         android:textColor="@android:color/background_dark"
-                        android:textColorHint="@color/colorGris"
+                        android:textColorHighlight="@color/colorNegro"
+                        android:textColorHint="@color/colorPrimary"
                         android:textSize="14sp" />
 
                     <EditText
@@ -91,7 +93,8 @@
                         android:inputType="numberDecimal"
                         android:textAlignment="center"
                         android:textColor="@android:color/background_dark"
-                        android:textColorHint="@color/colorGris"
+                        android:textColorHighlight="@color/colorNegro"
+                        android:textColorHint="@color/colorPrimary"
                         android:textSize="14sp" />
                 </LinearLayout>
             </TableRow>
@@ -124,7 +127,7 @@
                     android:shadowColor="#FFFFFF"
                     android:textAlignment="center"
                     android:textColor="@android:color/background_dark"
-                    android:textColorHint="@color/colorGris"
+                    android:textColorHint="@color/colorPrimary"
                     android:textSize="14sp" />
 
             </TableRow>
@@ -157,7 +160,7 @@
                     android:scrollbarSize="4dp"
                     android:textAlignment="center"
                     android:textColor="@android:color/background_dark"
-                    android:textColorHint="@color/colorGris"
+                    android:textColorHint="@color/colorPrimary"
                     android:textSize="14sp" />
             </TableRow>
 
